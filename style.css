@@ -6,8 +6,11 @@ font-family:Poppins,sans-serif;
 }
 
 body{
-background:white;
 color:#333;
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+transition:background-image 2s ease-in-out;
 }
 
 #hero{
