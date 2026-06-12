@@ -1,22 +1,23 @@
 const flowers = [
-  "flower1.jpg",
-  "flower2.jpg",
-  "flower3.jpg",
-  "flower4.jpg"
+"flower1.jpg",
+"flower2.jpg",
+"flower3.jpg",
+"flower4.jpg"
 ];
 
 let index = 0;
 
-const hero = document.getElementById("hero");
-
 function changeBackground() {
-  hero.style.backgroundImage = `url(${flowers[index]})`;
 
-  index++;
+document.body.style.backgroundImage =
+`url(${flowers[index]})`;
 
-  if (index >= flowers.length) {
-    index = 0;
-  }
+index++;
+
+if (index >= flowers.length) {
+index = 0;
+}
+
 }
 
 changeBackground();
