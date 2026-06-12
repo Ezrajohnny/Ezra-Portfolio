@@ -14,115 +14,97 @@ transition:background-image 2s ease-in-out;
 }
 
 #hero{
-
 height:100vh;
-
-background-size:cover;
-
-background-position:center;
-
-transition:background-image 2s ease-in-out;
-
 display:flex;
-
 justify-content:center;
-
 align-items:center;
 }
 
 .overlay{
-
-background:rgba(255,255,255,.75);
-
+background:rgba(255,255,255,0.75);
 padding:50px;
-
 border-radius:20px;
-
 backdrop-filter:blur(10px);
-
 text-align:center;
-
 animation:fadeIn 2s;
+max-width:800px;
+width:90%;
 }
 
 h1{
-
 font-size:4rem;
-
 color:#d63384;
 }
 
 h2{
-
 margin:20px 0;
+color:#222;
+}
+
+p{
+line-height:1.8;
 }
 
 .btn{
-
 display:inline-block;
-
 margin-top:20px;
-
 padding:12px 25px;
-
 background:#ff69b4;
-
 color:white;
-
 text-decoration:none;
-
 border-radius:30px;
-
 transition:.3s;
+font-weight:bold;
 }
 
 .btn:hover{
-
 transform:scale(1.1);
 }
 
 section{
-
-padding:80px 10%;
+padding:60px 10%;
+margin:25px;
+background:rgba(255,255,255,0.75);
+backdrop-filter:blur(10px);
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
 
 .cards{
-
 display:grid;
-
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
 gap:20px;
 }
 
 .card{
-
-background:white;
-
+background:rgba(255,255,255,0.6);
+backdrop-filter:blur(8px);
 padding:25px;
-
 border-radius:15px;
-
 box-shadow:0 5px 15px rgba(0,0,0,.1);
-
 transition:.3s;
 }
 
 .card:hover{
-
 transform:translateY(-10px);
 }
 
-@keyframes fadeIn{
+a{
+color:#d63384;
+text-decoration:none;
+}
 
+a:hover{
+text-decoration:underline;
+}
+
+@keyframes fadeIn{
 from{
 opacity:0;
 transform:translateY(50px);
 }
-
 to{
 opacity:1;
 transform:translateY(0);
 }
-
 }
