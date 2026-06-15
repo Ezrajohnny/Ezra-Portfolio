@@ -189,19 +189,16 @@ color:white;
 }
 
 section h2{
-
-color:#00d4ff;
-
-margin-bottom:25px;
-
-font-size:2rem;
+    color:white;
+    border-left:5px solid #00d4ff;
+    padding-left:15px;
+    margin-bottom:25px;
+    font-size:2rem;
 }
 
 section p{
-
-color:#e0e0e0;
-
-line-height:1.8;
+    color:#f5f5f5;
+    line-height:1.8;
 }
 
 /* CARDS */
@@ -239,12 +236,9 @@ box-shadow:0 8px 20px rgba(0,0,0,0.3);
 }
 
 .card h3{
-
-color:#00d4ff;
-
-margin-bottom:10px;
-
-cursor:pointer;
+    color:white;
+    font-weight:700;
+    margin-bottom:10px;
 }
 
 /* SKILLS */
@@ -329,7 +323,7 @@ padding:30px;
 }
 
 .hero-name{
-font-size:4.5rem;
+font-size:5rem;
 font-weight:900;
 letter-spacing:3px;
 text-transform:uppercase;
@@ -357,4 +351,13 @@ font-size:1.2rem;
 color:#d9d9d9;
 letter-spacing:1px;
 margin-bottom:40px;
+}
+
+a{
+    color:#00d4ff;
+    text-decoration:none;
+}
+
+a:hover{
+    color:white;
 }
