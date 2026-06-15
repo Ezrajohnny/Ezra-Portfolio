@@ -8,18 +8,21 @@ const flowers = [
 let index = 0;
 
 function changeBackground() {
+
     document.body.style.backgroundImage =
-        `url('${flowers[index]}')`;
+    `url('${flowers[index]}')`;
 
     index++;
 
     if(index >= flowers.length){
         index = 0;
     }
+
 }
 
 changeBackground();
-setInterval(changeBackground, 10000);
+
+setInterval(changeBackground,10000);
 
 function toggleSkill(id){
 
@@ -34,13 +37,15 @@ content.style.display = "block";
 
 }
 
-const accordions = document.querySelectorAll(".accordion-btn");
+const accordions =
+document.querySelectorAll(".accordion-btn");
 
 accordions.forEach(btn => {
 
 btn.addEventListener("click", () => {
 
-const content = btn.nextElementSibling;
+const content =
+btn.nextElementSibling;
 
 if(content.style.display === "block"){
 content.style.display = "none";
@@ -52,3 +57,24 @@ content.style.display = "block";
 });
 
 });
+
+const startBtn =
+document.getElementById("start-btn");
+
+if(startBtn){
+
+startBtn.addEventListener("click", () => {
+
+document.getElementById(
+"welcome-screen"
+).style.display = "none";
+
+document.getElementById(
+"main-content"
+).style.display = "block";
+
+window.scrollTo(0,0);
+
+});
+
+}
