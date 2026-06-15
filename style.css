@@ -146,3 +146,25 @@ cursor:pointer;
 .card.active .skill-content{
 display:block;
 }
+
+.accordion-btn{
+width:100%;
+padding:18px;
+margin:10px 0;
+border:none;
+border-radius:12px;
+background:rgba(255,255,255,0.1);
+color:white;
+font-size:18px;
+font-weight:bold;
+text-align:left;
+cursor:pointer;
+}
+
+.accordion-content{
+display:none;
+padding:20px;
+background:rgba(255,255,255,0.05);
+border-radius:12px;
+margin-bottom:15px;
+}
