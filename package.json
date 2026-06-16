@@ -1,0 +1,19 @@
+{
+  "name": "ezra-portfolio",
+  "version": "1.0.0",
+  "description": "Ezra Anandaraj Portfolio Website",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static site - no build step required'",
+    "test": "echo 'No tests configured'"
+  },
+  "keywords": [
+    "portfolio",
+    "website"
+  ],
+  "author": "Ezra Anandaraj",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.12"
+  }
+}
